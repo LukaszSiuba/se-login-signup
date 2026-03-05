@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--Specifies character encoding to utf-8 for the page, visible area of page, and links style.css as the stylesheet-->
-        <meta charset="utf-8">
-        <meta name ="viewport" content="width=device-width" />
+        <!--Specifies character encoding to utf-8 for the page, visible area of page, and links style.css as the stylesheet (METADATA) -->
+        <title>Sign Up | Lukasz Siuba</title>
+        <meta charset="utf-8"> 
         <link rel ="stylesheet" href="styles.css">
-        <title>Sign Up</title>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <h1>Sign Up</h1>
-        <form>
-            <!-- Displays the user a form to submit their first name, last name, User ID, password, and a link to the login page-->
-            <label for="firstName">First Name:</label><br>
-            <input type="text" id="firstName" name ="First Name"><br>
-            <label for="lastName">Last Name:</label><br>
-            <input type="text" id="lastName" name ="Last Name"><br>
-            <label for="UserID">User ID:</label><br>
-            <input type="text" id="UserID" name ="User ID" ><br>
-            <label for="Password">Password:</label><br>
-            <input type="password" id="Password" name ="Password"><br>
-            <input type="submit" value="Submit"><br>
-        </form>
-        <!-- Link to the "Login" page aka the relative login.html file-->
-        <p>Have An Account? <a href="login.html" target="_self">Login!</a></p>
+        <div class="form"> 
+            <!--- Header for form-->
+            <h1>Create an Account</h1>
+            <!-- Form, includes display text and input fields for First Name, Last Name, User ID, Password, and a button to submit.-->
+            <form>
+                <div class = "firstName"> 
+                    <label for="fName">First Name </label>
+                    <input type="text" id="fName" name="fname" placeholder="Enter your First Name"/>
+                </div>
+                <div class = "lastName">
+                    <label for = "lName">Last Name </label>
+                    <input type="text" id="lName" name = "lname" placeholder="Enter your Last Name" />
+                </div>
+                <div class="uID">
+                    <label for="userID">User ID </label>
+                    <input type="text" id="userID" name = "userID" placeholder="Enter your User ID" />
+                </div>
+                <div class="pword">
+                    <label for="password">Password </label>
+                    <input type="password" id="password" name = "pword" placeholder="Enter your Password" />
+                </div>
+                <button type="submit" class="submit-button">Create Account</button>
+            </form>
+            <!-- Link to the "Login" page aka the relative login.html file -->
+            <p>Already have an account? <a href="login.html" target="_self">Login Here</a></p> <!-- target="_self is not necessarily required but done for future implementations."-->
+        </div>
     </body>
 </html>
